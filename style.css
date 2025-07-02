@@ -1,3 +1,131 @@
-#container {
+/*Première étape */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* #container {
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+} */
+
+.border {
+  text-align: center;
+}
+
+/* mettre en place le header*/
+.header {
+  background-color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*placer les contenus de droite*/
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Séparer les contenu de droite*/
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.logo {
+  font-size: 15px;
+  font-weight: bold;
+  color: #36b29b; /* Vert clair de la maquette */
+}
+
+.content {
+  justify-content: center;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  height: 90vh;
+  background-image: url(./images/background.jpg);
+  flex-direction: column;
+}
+
+.content::before {
+  background: rgba(0, 0, 0, 0.4); /* fonce un peu le fond pour lisibilité */
+}
+
+.content-text {
+  position: relative;
+  color: white;
+  max-width: 700px;
+  padding: 0 20px;
+  margin-bottom: 150px;
+}
+
+.content-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content-text p {
+  font-size: 18px;
+}
+
+.cards {
+  display: flex;
+  gap: 100px;
+
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-card input,
+.search-card button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-card button {
+  background-color: #36b29b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.result-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.result-card hr {
+  width: 80%;
+  border: 1px solid #36b29b;
+  margin: 10px 0;
+}
+
+.result-card p {
+  text-align: center;
+  color: #333;
+  font-weight: 500;
 }

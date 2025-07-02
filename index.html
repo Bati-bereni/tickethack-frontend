@@ -3,27 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <div id="container">
-      <div id="header">
-        Header
-        <div id="logo"></div>
-        <div id="connection"></div>
-        <div id="booking"></div>
-        <div id="Cart"></div>
-      </div>
-      <div id="content">Container</div>
-      <div id="search">
-        Search
-        <div id="departure"></div>
-        <div id="arrival"></div>
+      <header>
+        <div class="header">
+          <div class="logo">
+            <h1>Tickethack</h1>
+          </div>
+          <nav class="nav-links">
+            <a href="#">Cart</a>
+            <a href="#">Bookings</a>
+          </nav>
+        </div>
+      </header>
+      <div class="border" id="content">
+        <main class="content">
+          <div class="content-text">
+            <h1>Explore the world effortlessly by train!</h1>
+            <p>
+              Compare, book and enjoy cheap prices for train tickets: your
+              journey starts on Tickethack.
+            </p>
+          </div>
+          <div class="cards">
+          <!-- Carte de gauche : formulaire -->
+        <div class="card search-card">
+          <h2>Search</h2>
+          <input type="text" placeholder="Departure" />
+         <input type="text" placeholder="Arrival" />
+          <input type="date" />
+          <button>Search</button>
+        </div>
 
-        <div id="date"></div>
+         <!-- Carte de droite : inspiration -->
+        <div class="card result-card">
+          <img src="./images/train.png" alt="Train icon" />
+         <hr />
+          <p>It's time to book your future trip.</p>
+        </div>
       </div>
-      <div id="result">Result</div>
     </div>
+        </main>
+
+      
     <script src="script.js"></script>
   </body>
 </html>
