@@ -32,7 +32,7 @@ document.querySelector("#search-button").addEventListener("click", () => {
       console.log("allTrips =>", data.allTrips);
       if (data.result === true) {
         console.log("data is true");
-          document.querySelector(".result-card").innerHTML = "" 
+        document.querySelector(".result-card").innerHTML = "";
 
         // Si j'ai un résultat true dans mon back, j'accepte de faire la boucle
         for (let trip of data.allTrips) {
@@ -63,7 +63,7 @@ document.querySelector("#search-button").addEventListener("click", () => {
       }
     });
 });
-
+// trigger modif
 // pour chaque document trouvé correspondant la recherche,
 // afficher le résultat (document.querySelector('.card result-card').innerHTML +=`
 // avec creation du boutton add (add to cart)
