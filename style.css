@@ -113,6 +113,11 @@
   cursor: pointer;
 }
 
+.result-card {
+  height: 320px;
+  overflow: scroll;
+}
+
 .result-card img {
   width: 60px;
   margin-bottom: 10px;
@@ -128,4 +133,35 @@
   text-align: center;
   color: #333;
   font-weight: 500;
+}
+
+.response-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+  width: 94%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.trip-departure {
+  background-color: #36b29b;
+}
+
+.signe {
+  background-color: yellow;
+}
+
+.trip-arrival {
+  background-color: green;
+}
+
+.trip-price {
+  background-color: blueviolet;
+}
+
+.euro {
+  background-color: fuchsia;
 }
