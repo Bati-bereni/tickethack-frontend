@@ -47,7 +47,7 @@ document.querySelector("#search-button").addEventListener("click", () => {
                   <div class="trip-arrival">${trip.arrival}</div>
                   <div class="trip-price">${trip.price}</div>
                   <div class="euro"><p>€</p></div>
-                  <div class="button"><button id="book">Book</button></div>
+                  <button class="book button">Book</button>
            
               </div>`;
           // document.querySelector(".card result-card").innerHTML +=
